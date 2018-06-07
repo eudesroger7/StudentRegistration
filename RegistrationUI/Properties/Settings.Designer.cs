@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StudentRegistration.Properties
+namespace RegistrationUI.Properties
 {
 
 

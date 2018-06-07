@@ -1,7 +1,11 @@
-public static void Main (string[] args)
+
+# Student Registration
+
+# For testing of the repository methods
+
+        public static void Main (string[] args)
         {
             Repository rep = new Repository();
-
             Student eudes = new Student(201802538);
             eudes.setName("Eudes");
 
@@ -56,6 +60,4 @@ public static void Main (string[] args)
             rep.update(jamilly);
 
             Console.WriteLine(rep.show()+" | "+rep.getIndex(jamilly));
-
-
         }

@@ -8,6 +8,11 @@ namespace Student
 {
     class StudentController
     {
-        
+        public StudentController()
+        {
+            Repository repository = new Repository();
+        }
+
+
     }
 }

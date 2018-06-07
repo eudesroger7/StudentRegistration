@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B55CB0FB-BC7B-467E-B1A2-207120087EA5}</ProjectGuid>
+    <ProjectGuid>{6382852A-4E50-44F7-AFCE-180CDD4C88B1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>StudentRegistration</RootNamespace>
-    <AssemblyName>StudentRegistration</AssemblyName>
+    <RootNamespace>RegistrationUI</RootNamespace>
+    <AssemblyName>RegistrationUI</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
