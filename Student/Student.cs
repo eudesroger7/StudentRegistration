@@ -18,10 +18,20 @@ namespace Student
         private double note3;
         private double note4;
         private double finalNote;
-
+        
+        //constructor
         public Student()
         {
-
+            this.name = null;
+            this.matriculation = 0;
+            this.serie = ' ';
+            this.classId = ' ';
+            this.teacher = null;
+            this.note1 = 0;
+            this.note2 = 0;
+            this.note3 = 0;
+            this.note4 = 0;
+            this.finalNote = 0;
         }
 
         //getters
