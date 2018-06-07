@@ -20,10 +20,10 @@ namespace Student
         private double finalNote;
         
         //constructor
-        public Student()
+        public Student(long matriculation)
         {
             this.name = null;
-            this.matriculation = 0;
+            this.matriculation = matriculation;
             this.serie = ' ';
             this.classId = ' ';
             this.teacher = null;
@@ -48,7 +48,7 @@ namespace Student
 
         //setters
         public void setName(string name) { this.name = name; }
-        public void setMatriculation(long matriculation) { this.matriculation = matriculation; }
+        //public void setMatriculation(long matriculation) { this.matriculation = matriculation; }
         public void setSerie(char serie) { this.serie = serie; }
         public void setClassId(char classId) { this.classId = classId; }
         public void setTeacher(string teacher) { this.teacher = teacher; }

@@ -26,9 +26,23 @@ namespace Student
             this.repository.Remove(student);
         }
 
-        public void update(Student student, int index)
+        public void update(Student newStudent)
         {
-            this.repository.Insert(index, student);
+            foreach(Student student in this.repository)
+            {
+                if(student.getMatriculation() == newStudent.getMatriculation())
+                {
+                    student.setName(newStudent.getName());
+                    student.setSerie(newStudent.getSerie());
+                    student.setClassId(newStudent.getClassId());
+                    student.setTeacher(newStudent.getTeacher());
+                    student.setNote1(newStudent.getNote1());
+                    student.setNote2(newStudent.getNote2());
+                    student.setNote3(newStudent.getNote3());
+                    student.setNote4(newStudent.getNote4());
+                    student.setFinalNote(newStudent.getFinalNote());
+                }
+            }
         }
 
         public Student search(long matriculation)
@@ -41,6 +55,14 @@ namespace Student
                 }
             }
             return null;
+        }
+
+        public int getIndex(Student student)
+        {
+            int index = this.repository.IndexOf(student);
+            
+
+            return index;
         }
 
         public bool exist(long matriculation)
@@ -66,7 +88,8 @@ namespace Student
             {
                 str = str + (
                     "\n------------------------\n" +
-                    "Name: " + student.getName() +
+                    "Id: "+ getIndex(student)+
+                    "\nName: " + student.getName() +
                     "\nMatriculation: " + student.getMatriculation() +
                     "\nSerie: " + student.getSerie() +
                     "\nClass: " + student.getClassId() +
