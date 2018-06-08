@@ -53,15 +53,15 @@ namespace Student
             }
         }
 
-        public string search(Student student)
+        public string search(long matriculation)
         {
-            if (!repository.exist(student.getMatriculation()))
+            if (!repository.exist(matriculation))
             {
                 return "Student does not exist!";
             }
             else
             {
-                return repository.search(student.getMatriculation());
+                return repository.search(matriculation);
             }
         }
 
