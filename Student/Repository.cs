@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Student
 {
-    class Repository
+    public class Repository
     {
         private ArrayList repository;
 

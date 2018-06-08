@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student
 {
-    class Student
+    public class Student
     {
         private string name;
         private long matriculation;

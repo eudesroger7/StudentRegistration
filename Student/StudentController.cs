@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student
 {
-    class StudentController
+    public class StudentController
     {
         private Repository repository;
 
