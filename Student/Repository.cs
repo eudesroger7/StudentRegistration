@@ -45,16 +45,58 @@ namespace Student
             }
         }
 
-        public Student search(long matriculation)
+        public String search(long matriculation)
         {   
             foreach(Student student in this.repository)
             {
                 if(student.getMatriculation() == matriculation)
                 {
-                    return student;
+                    string str = (
+                        "\n------------------------\n" +
+                        "Id: " + getIndex(student) +
+                        "\nName: " + student.getName() +
+                        "\nMatriculation: " + student.getMatriculation() +
+                        "\nSerie: " + student.getSerie() +
+                        "\nClass: " + student.getClassId() +
+                        "\nTeacher: " + student.getTeacher() +
+                        "\nNote 1: " + student.getNote1() +
+                        "\nNote 2: " + student.getNote2() +
+                        "\nNote 3: " + student.getNote3() +
+                        "\nNote 4: " + student.getNote4() +
+                        "\nFinal Note: " + student.getFinalNote() +
+                         "\n------------------------\n"
+                    );
+
+                    return str;
                 }
             }
             return null;
+        }
+
+        public string show()
+        {
+            string str = "";
+
+            foreach (Student student in this.repository)
+            {
+                str = str + (
+                    "\n------------------------\n" +
+                    "Id: " + getIndex(student) +
+                    "\nName: " + student.getName() +
+                    "\nMatriculation: " + student.getMatriculation() +
+                    "\nSerie: " + student.getSerie() +
+                    "\nClass: " + student.getClassId() +
+                    "\nTeacher: " + student.getTeacher() +
+                    "\nNote 1: " + student.getNote1() +
+                    "\nNote 2: " + student.getNote2() +
+                    "\nNote 3: " + student.getNote3() +
+                    "\nNote 4: " + student.getNote4() +
+                    "\nFinal Note: " + student.getFinalNote() +
+                    "\n------------------------\n"
+                 );
+            }
+
+            return str;
         }
 
         public int getIndex(Student student)
@@ -80,30 +122,12 @@ namespace Student
             return exist;
         }
 
-        public string show()
+        public bool isEmpty()
         {
-            string str = "";
-
-            foreach (Student student in this.repository)
-            {
-                str = str + (
-                    "\n------------------------\n" +
-                    "Id: "+ getIndex(student)+
-                    "\nName: " + student.getName() +
-                    "\nMatriculation: " + student.getMatriculation() +
-                    "\nSerie: " + student.getSerie() +
-                    "\nClass: " + student.getClassId() +
-                    "\nTeacher: " + student.getTeacher() +
-                    "\nNote 1: " + student.getNote1() +
-                    "\nNote 2: " + student.getNote2() +
-                    "\nNote 3: " + student.getNote3() +
-                    "\nNote 4: " + student.getNote4() +
-                    "\nFinal Note: " + student.getFinalNote() +
-                    "\n------------------------\n"
-                 );
-            }
-
-            return str;
+            if(this.repository.Count < 1) {return true;}
+            else {return false;}
         }
+
+
     }
 }
