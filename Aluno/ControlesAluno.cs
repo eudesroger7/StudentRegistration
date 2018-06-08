@@ -62,7 +62,6 @@ namespace Aluno
             }
             else
             {
-
                 return "Aluno encontrado!\n" + this.repositorio.procurar(matricula);
             }
         }

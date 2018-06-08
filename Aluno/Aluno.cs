@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Aluno
+﻿namespace Aluno
 {
     public class Aluno
     {
@@ -19,10 +13,15 @@ namespace Aluno
         private double nota3;
         private double nota4;
         private double notaFinal;
+        /*Usamos as variaveis do tipo private para elas serem acessadas apenas
+         de dentro da clase. As variaveis e metodos publicos podem ser acessadas
+         de qualquer lugar.*/
 
         //construtor
         public Aluno(long matricula) //para criar um objeto do tipo Aluno só precisa passar a matricula por parametro
-        {
+        {   
+            //usamos o this para referenciar as variaveis globais
+
             this.nome = null; //atribui um valor nulo ao nome
             this.matricula = matricula; //atribui a matricula recebida no parametro a matricula
             this.serie = ' '; //atribui uma serie nula
@@ -35,7 +34,7 @@ namespace Aluno
             this.notaFinal = 0; //atribui um valor 0 a nota final
         }
 
-        //getters - métodos que retornam o valor do atributos do aluno
+        // getters - métodos que retornam o valor do atributos do aluno
         public string getNome() { return this.nome; } // retorna o nome
         public long getMatricula() { return this.matricula; } // retorna a matricula
         public char getSerie() { return this.serie; } // retorna a serie
@@ -47,7 +46,7 @@ namespace Aluno
         public double getNota4() { return this.nota4; } // retorna a nota 3
         public double getNotaFinal() { return this.notaFinal; } // retorna a nota final
 
-        //setters
+        //setters - metodos que modificam o valor da variável
         public void setNome(string nome) { this.nome = nome; } // recebe uma string por parameto e atribui ao nome
         //public void setMatricula(long matricula) { this.matricula = matricula; } // recebe um long por parametro e atribui a variável matricula
         public void setSerie(char serie) { this.serie = serie; } // recebe uma char por parameto e atribui a serie
@@ -56,9 +55,8 @@ namespace Aluno
         public void setNota1(double nota) { this.nota1 = nota; } // recebe um inte por parameto e atribui a nota 1
         public void setNota2(double nota) { this.nota2 = nota; } // recebe um inte por parameto e atribui a nota 2
         public void setNota3(double nota) { this.nota3 = nota; } // recebe um inte por parameto e atribui a nota 3
-        public void setNota4(double nora) { this.nota4 = nora; } // recebe um inte por parameto e atribui a nota 4
+        public void setNota4(double nota) { this.nota4 = nota; } // recebe um inte por parameto e atribui a nota 4
         public void setNotaFinal(double nota) { this.notaFinal = nota; } // recebe um inte por parameto e atribui a nota final
-
 
     }
 }

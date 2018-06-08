@@ -11,7 +11,7 @@ namespace Aluno
         public static void Main(string[] args)
         {
             ControlesAluno controller = new ControlesAluno();
-
+            print("\n" + controller.listar());
             print("\nInsira a matricula do aluno");
             Aluno eudes = new Aluno(long.Parse(Console.ReadLine()));
             print("Insira o nome");
