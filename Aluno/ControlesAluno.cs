@@ -17,20 +17,20 @@ namespace Aluno
 
         public string criar(Aluno aluno)
         {
-            if (this.repositorio.existe(aluno.getMatricula()))
+            if (this.repositorio.existe(aluno.getMatricula())) //testa se o aluno já está cadastrado
             {
                 return "Aluno já está cadastrado!";
             }
             else
             {
-                this.repositorio.inserir(aluno);
+                this.repositorio.inserir(aluno); //chama o método do repositório que adiciona o aluno no arraylist
                 return "Sucesso! Aluno cadastrado!";
             }
         }
 
         public string modificar(Aluno aluno)
         {
-            if (!this.repositorio.existe(aluno.getMatricula()))
+            if (!this.repositorio.existe(aluno.getMatricula())) //testa se o aluno já está cadastrado
             {
                 return "Aluno não encontrado!";
             }
