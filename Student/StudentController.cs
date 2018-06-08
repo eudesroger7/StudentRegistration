@@ -17,63 +17,63 @@ namespace Student
         
         public string create(Student student)
         {
-            if (repository.exist(student.getMatriculation()))
+            if (this.repository.exist(student.getMatriculation()))
             {
                 return "Student is already registered!";
             }
             else
             {
-                repository.insert(student);
+                this.repository.insert(student);
                 return "Student successfully registered!";
             }
         }
 
         public string modify(Student student)
         {
-            if (!repository.exist(student.getMatriculation()))
+            if (!this.repository.exist(student.getMatriculation()))
             {
                 return "Student does not exist!";
             } else
             {
-                repository.update(student);
+                this.repository.update(student);
                 return "Information was updated";
             }
         }
 
         public string delete(Student student)
         {
-            if (!repository.exist(student.getMatriculation()))
+            if (!this.repository.exist(student.getMatriculation()))
             {
                 return "Student does not exist!";
             }
             else
             {
-                repository.remove(student);
+                this.repository.remove(student);
                 return "Deleted student!";
             }
         }
 
         public string search(long matriculation)
         {
-            if (!repository.exist(matriculation))
+            if (!this.repository.exist(matriculation))
             {
                 return "Student does not exist!";
             }
             else
             {
-                return repository.search(matriculation);
+                return this.repository.search(matriculation);
             }
         }
 
         public string show()
         {
-            if (repository.isEmpty())
+            if (this.repository.isEmpty())
             {
                 return "Empty repository!";
             }
             else
             {
-                return repository.show();
+                return this.repository.show();
             }
         }
     }
