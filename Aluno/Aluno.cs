@@ -13,6 +13,7 @@
         private double nota3;
         private double nota4;
         private double notaFinal;
+
         /*Usamos as variaveis do tipo private para elas serem acessadas apenas
          de dentro da clase. As variaveis e metodos publicos podem ser acessadas
          de qualquer lugar.*/

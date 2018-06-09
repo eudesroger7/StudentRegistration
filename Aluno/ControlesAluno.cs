@@ -41,15 +41,15 @@ namespace Aluno
             }
         }
 
-        public string deletar(Aluno aluno)
+        public string deletar(long matricula)
         {
-            if (!this.repositorio.existe(aluno.getMatricula()))
+            if (!this.repositorio.existe(matricula))
             {
                 return "Aluno não encontrado!";
             }
             else
             {
-                this.repositorio.remover(aluno);
+                this.repositorio.remover(matricula);
                 return "Aluno deletado!";
             }
         }
