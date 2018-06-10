@@ -6,9 +6,12 @@ namespace RegistrationUI
 {
     public partial class telaMain : Form
     {
+        private ControlesAluno controle;
+
         public telaMain()
         {
             InitializeComponent();
+            this.controle = new ControlesAluno();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -23,8 +26,14 @@ namespace RegistrationUI
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            telaCadastrar form = new telaCadastrar();
+            telaCadastrar form = new telaCadastrar(this.controle);
             form.Show();
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            tbMain.Text = controle.listar();
+            
         }
     }
 }

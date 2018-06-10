@@ -195,6 +195,7 @@
             // cbSerie
             // 
             this.cbSerie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbSerie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSerie.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbSerie.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSerie.FormattingEnabled = true;
@@ -212,6 +213,7 @@
             // cbTurma
             // 
             this.cbTurma.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbTurma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTurma.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbTurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTurma.FormattingEnabled = true;
@@ -229,7 +231,7 @@
             this.tbNota1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNota1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota1.Location = new System.Drawing.Point(95, 258);
-            this.tbNota1.MaxLength = 3;
+            this.tbNota1.MaxLength = 2;
             this.tbNota1.Name = "tbNota1";
             this.tbNota1.Size = new System.Drawing.Size(74, 26);
             this.tbNota1.TabIndex = 15;
@@ -239,7 +241,7 @@
             this.tbNota2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNota2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota2.Location = new System.Drawing.Point(349, 258);
-            this.tbNota2.MaxLength = 3;
+            this.tbNota2.MaxLength = 2;
             this.tbNota2.Name = "tbNota2";
             this.tbNota2.Size = new System.Drawing.Size(82, 26);
             this.tbNota2.TabIndex = 16;
@@ -249,7 +251,7 @@
             this.tbNota3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNota3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota3.Location = new System.Drawing.Point(97, 303);
-            this.tbNota3.MaxLength = 3;
+            this.tbNota3.MaxLength = 2;
             this.tbNota3.Name = "tbNota3";
             this.tbNota3.Size = new System.Drawing.Size(72, 26);
             this.tbNota3.TabIndex = 17;
@@ -259,7 +261,7 @@
             this.tbNota4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbNota4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota4.Location = new System.Drawing.Point(350, 303);
-            this.tbNota4.MaxLength = 3;
+            this.tbNota4.MaxLength = 2;
             this.tbNota4.Name = "tbNota4";
             this.tbNota4.Size = new System.Drawing.Size(81, 26);
             this.tbNota4.TabIndex = 18;
@@ -292,6 +294,7 @@
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // telaCadastrar
             // 
