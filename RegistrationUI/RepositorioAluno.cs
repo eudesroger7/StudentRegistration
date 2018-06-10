@@ -58,7 +58,7 @@ namespace RegistrationUI
                 if (aluno.getMatricula() == matricula)
                 {
                     string str = (
-                        "Id: " + getIndex(aluno) +
+                        "Id: " + (getIndex(aluno) + 1) +
                         "\r\n Nome: " + aluno.getNome() +
                         "\r\n Matricula: " + aluno.getMatricula() +
                         "\r\n Serie: " + aluno.getSerie() +
@@ -85,7 +85,7 @@ namespace RegistrationUI
             foreach (Aluno aluno in this.repositorio)
             {
                 str = str + (
-                    "Id: " + getIndex(aluno) +
+                    "Id: " + (getIndex(aluno) + 1) +
                     "\r\n Nome: " + aluno.getNome() +
                     "\r\n Matricula: " + aluno.getMatricula() +
                     "\r\n Serie: " + aluno.getSerie() +

@@ -28,16 +28,16 @@ namespace RegistrationUI
             }
         }
 
-        public string modificar(Aluno aluno)
+        public bool modificar(Aluno aluno)
         {
             if (!this.repositorio.existe(aluno.getMatricula())) //testa se o aluno já está cadastrado
             {
-                return "Aluno não encontrado!";
+                return false;
             }
             else
             {
                 this.repositorio.atualizar(aluno);
-                return "As informações foram atualizadas!";
+                return true;
             }
         }
 
