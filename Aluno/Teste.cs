@@ -13,7 +13,7 @@ namespace Aluno
             ControlesAluno controller = new ControlesAluno();
             print("\n" + controller.listar());
             print("\nInsira a matricula do aluno");
-            Aluno eudes = new Aluno(long.Parse(scan()));
+            Aluno eudes = new Aluno("",0,' ',' ',"",0,0,0,0);
             print("Insira o nome");
             eudes.setNome(scan());
             print("Insira o nome do professor");
@@ -21,7 +21,7 @@ namespace Aluno
             print("\n" + controller.criar(eudes));
 
             print("\nInsira a matricula do aluno");
-            Aluno gabriel = new Aluno(long.Parse(Console.ReadLine()));
+            Aluno gabriel = new Aluno("", 0, ' ', ' ', "", 0, 0, 0, 0);
             print("Insira o nome");
             gabriel.setNome(scan());
             print("Insira o nome do professor");

@@ -60,7 +60,7 @@
             this.titleMain.AutoSize = true;
             this.titleMain.BackColor = System.Drawing.Color.Transparent;
             this.titleMain.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleMain.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.titleMain.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.titleMain.Location = new System.Drawing.Point(12, 21);
             this.titleMain.Name = "titleMain";
             this.titleMain.Size = new System.Drawing.Size(213, 25);
@@ -85,7 +85,7 @@
             // 
             // btnAdicionar
             // 
-            this.btnAdicionar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAdicionar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnAdicionar.FlatAppearance.BorderSize = 0;
             this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,7 +100,7 @@
             // 
             // btnRemover
             // 
-            this.btnRemover.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRemover.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnRemover.FlatAppearance.BorderSize = 0;
             this.btnRemover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemover.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,7 +115,7 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAtualizar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnAtualizar.FlatAppearance.BorderSize = 0;
             this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,7 +130,7 @@
             // 
             // btnListar
             // 
-            this.btnListar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnListar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnListar.FlatAppearance.BorderSize = 0;
             this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,7 +145,7 @@
             // 
             // btnProcurar
             // 
-            this.btnProcurar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnProcurar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btnProcurar.FlatAppearance.BorderSize = 0;
             this.btnProcurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcurar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

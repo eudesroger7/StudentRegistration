@@ -68,7 +68,7 @@
             this.btnRemoverBuscar.FlatAppearance.BorderSize = 0;
             this.btnRemoverBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoverBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoverBuscar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnRemoverBuscar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnRemoverBuscar.Location = new System.Drawing.Point(381, 90);
             this.btnRemoverBuscar.Name = "btnRemoverBuscar";
             this.btnRemoverBuscar.Size = new System.Drawing.Size(64, 24);
@@ -163,7 +163,7 @@
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnCancelar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnCancelar.Location = new System.Drawing.Point(344, 386);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(94, 31);
@@ -179,7 +179,7 @@
             this.btnRemover.FlatAppearance.BorderSize = 0;
             this.btnRemover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemover.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemover.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnRemover.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnRemover.Location = new System.Drawing.Point(210, 377);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(119, 40);
@@ -306,7 +306,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(500, 450);
             this.Controls.Add(this.btnRemoverBuscar);
             this.Controls.Add(this.label9);

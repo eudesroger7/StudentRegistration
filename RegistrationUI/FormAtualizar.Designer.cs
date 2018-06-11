@@ -186,7 +186,7 @@
             this.btnAtualizar.FlatAppearance.BorderSize = 0;
             this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnAtualizar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnAtualizar.Location = new System.Drawing.Point(219, 366);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(119, 40);
@@ -202,7 +202,7 @@
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnCancelar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnCancelar.Location = new System.Drawing.Point(353, 375);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(94, 31);
@@ -297,7 +297,7 @@
             this.btnAtualizarBuscar.FlatAppearance.BorderSize = 0;
             this.btnAtualizarBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizarBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizarBuscar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnAtualizarBuscar.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.btnAtualizarBuscar.Location = new System.Drawing.Point(390, 79);
             this.btnAtualizarBuscar.Name = "btnAtualizarBuscar";
             this.btnAtualizarBuscar.Size = new System.Drawing.Size(64, 24);
@@ -310,7 +310,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(524, 450);
             this.Controls.Add(this.btnAtualizarBuscar);
             this.Controls.Add(this.label9);
