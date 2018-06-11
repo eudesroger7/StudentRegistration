@@ -32,7 +32,14 @@ namespace RegistrationUI
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            tbMain.Text = controle.listar();
+            if(controle.listar() == null)
+            {
+                tbMain.Text = "Não há alunos cadastrados";
+            } else
+            {
+                tbMain.Text = controle.listar();
+            }
+            
             
         }
 
