@@ -51,28 +51,13 @@ namespace RegistrationUI
             }
         }
 
-        public String procurar(long matricula)
+        public Aluno procurar(long matricula)
         {
             foreach (Aluno aluno in this.repositorio)
             {
                 if (aluno.getMatricula() == matricula)
                 {
-                    string str = (
-                        "Id: " + (getIndex(aluno) + 1) +
-                        "\r\n Nome: " + aluno.getNome() +
-                        "\r\n Matricula: " + aluno.getMatricula() +
-                        "\r\n Serie: " + aluno.getSerie() +
-                        "\r\n Turma: " + aluno.getTurma() +
-                        "\r\n Professor: " + aluno.getProfessor() +
-                        "\r\n Nota 1: " + aluno.getNota1() +
-                        "\r\n Nota 2: " + aluno.getNota2() +
-                        "\r\n Nota 3: " + aluno.getNota3() +
-                        "\r\n Nota 4: " + aluno.getNota4() +
-                        "\r\n Nota Final: " + aluno.getNotaFinal() +
-                        "\r\n-------------------------------\r\n"
-                    );
-
-                    return str;
+                    return aluno;
                 }
             }
             return null;

@@ -41,28 +41,28 @@ namespace RegistrationUI
             }
         }
 
-        public string deletar(long matricula)
+        public bool deletar(long matricula)
         {
             if (!this.repositorio.existe(matricula))
             {
-                return "Aluno não encontrado!";
+                return false;
             }
             else
             {
                 this.repositorio.remover(matricula);
-                return "Aluno deletado!";
+                return true;
             }
         }
 
-        public string procurar(long matricula)
+        public Aluno procurar(long matricula)
         {
             if (!this.repositorio.existe(matricula))
             {
-                return "Aluno não encontrado!";
+                return null;
             }
             else
             {
-                return "Aluno encontrado!\n" + this.repositorio.procurar(matricula);
+                return this.repositorio.procurar(matricula);
             }
         }
 
@@ -70,7 +70,7 @@ namespace RegistrationUI
         {
             if (this.repositorio.arrayVazio())
             {
-                return "Não há alunos cadastrados!";
+                return null;
             }
             else
             {

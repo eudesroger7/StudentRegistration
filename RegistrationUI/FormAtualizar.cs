@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace RegistrationUI
 {
-    public partial class FormAtualizar : Form
+    public partial class telaAtualizar : Form
     {
-        public FormAtualizar()
+        private ControlesAluno controle;
+        public telaAtualizar(ControlesAluno controle)
         {
             InitializeComponent();
+            this.controle = controle;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

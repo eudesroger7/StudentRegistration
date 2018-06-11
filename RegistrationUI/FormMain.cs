@@ -35,5 +35,11 @@ namespace RegistrationUI
             tbMain.Text = controle.listar();
             
         }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            telaAtualizar form = new telaAtualizar(this.controle);
+            form.Show();
+        }
     }
 }
