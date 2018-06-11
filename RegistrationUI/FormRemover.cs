@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace RegistrationUI
 {
-    public partial class telaAtualizar : Form
+    public partial class telaRemover : Form
     {
         private ControlesAluno controle;
-        public telaAtualizar(ControlesAluno controle)
+
+        public telaRemover(ControlesAluno controle)
         {
             InitializeComponent();
             this.controle = controle;
@@ -25,35 +26,46 @@ namespace RegistrationUI
             MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void btnRemoverBuscar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-        }
-
-        private void btnAtualizarBuscar_Click(object sender, EventArgs e)
-        {   
-            if(this.controle.procurar(long.Parse(tbMatricula.Text)) == null)
+            if (this.controle.procurar(long.Parse(tbMatricula.Text)) == null)
             {
                 avisoJanela("404", "O Aluno não existe!");
-                btnAtualizar.Visible = false;
-            } else
+                btnRemover.Visible = false;
+
+                tbNome.Text = "";
+                tbProfessor.Text = "";
+                cbSerie.Items.Clear();
+                cbTurma.Items.Clear();
+                tbNota1.Text = "";
+                tbNota2.Text = "";
+                tbNota3.Text = "";
+                tbNota4.Text = "";
+            }
+            else
             {
                 Aluno aluno = this.controle.procurar(long.Parse(tbMatricula.Text));
-                tbMatricula.ReadOnly = true;
                 tbNome.Text = aluno.getNome();
                 tbProfessor.Text = aluno.getProfessor();
+                cbSerie.Items.Insert(0, aluno.getSerie());
                 cbSerie.Text = "" + aluno.getSerie();
+                cbTurma.Items.Insert(0, aluno.getTurma());
                 cbTurma.Text = "" + aluno.getTurma();
                 tbNota1.Text = "" + aluno.getNota1();
                 tbNota2.Text = "" + aluno.getNota2();
                 tbNota3.Text = "" + aluno.getNota3();
                 tbNota4.Text = "" + aluno.getNota4();
 
-                btnAtualizar.Visible = true;
+                btnRemover.Visible = true;
             }
         }
 
-        private void btnAtualizar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnRemover_Click(object sender, EventArgs e)
         {
             Validacao valida = new Validacao();
 
@@ -75,22 +87,15 @@ namespace RegistrationUI
                            valida.validaNota(tbNota3.Text) && valida.validaNota(tbNota4.Text))
                         {
 
-                            string nome = tbNome.Text;
-                            long matricula = long.Parse(tbMatricula.Text);
-                            char serie = char.Parse(cbSerie.Text);
-                            char turma = char.Parse(cbTurma.Text);
-                            string professor = tbProfessor.Text;
-                            int nota1 = int.Parse(tbNota1.Text);
-                            int nota2 = int.Parse(tbNota2.Text);
-                            int nota3 = int.Parse(tbNota3.Text);
-                            int nota4 = int.Parse(tbNota4.Text);
-
-                            Aluno novoAluno = new Aluno(nome, matricula, serie, turma, professor, nota1, nota2, nota3, nota4);
-
-
-                            this.controle.modificar(novoAluno);
-                            avisoJanela("Sucesso!", "As informações foram atualizadas!");
-                            this.Dispose();
+                            if(this.controle.deletar(long.Parse(tbMatricula.Text)) == false)
+                            {
+                                avisoJanela("Erro!", "Não foi possível remover. Verifique as informações!");
+                                
+                            } else
+                            {
+                                avisoJanela("Sucesso!", "Aluno removido com sucesso!");
+                                this.Dispose();
+                            }
 
                         }
                         else

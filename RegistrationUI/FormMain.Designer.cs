@@ -38,6 +38,7 @@
             this.btnProcurar = new System.Windows.Forms.Button();
             this.tbProcurar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.saveDados = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // btnClose
@@ -70,15 +71,16 @@
             // 
             this.tbMain.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tbMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbMain.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbMain.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMain.Location = new System.Drawing.Point(170, 68);
+            this.tbMain.Location = new System.Drawing.Point(170, 79);
             this.tbMain.MaxLength = 999999999;
             this.tbMain.Multiline = true;
             this.tbMain.Name = "tbMain";
             this.tbMain.ReadOnly = true;
             this.tbMain.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbMain.ShortcutsEnabled = false;
-            this.tbMain.Size = new System.Drawing.Size(618, 420);
+            this.tbMain.Size = new System.Drawing.Size(618, 409);
             this.tbMain.TabIndex = 2;
             // 
             // btnAdicionar
@@ -109,6 +111,7 @@
             this.btnRemover.TabIndex = 4;
             this.btnRemover.Text = "Remover";
             this.btnRemover.UseVisualStyleBackColor = false;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // btnAtualizar
             // 
@@ -153,6 +156,7 @@
             this.btnProcurar.TabIndex = 7;
             this.btnProcurar.Text = "Procurar";
             this.btnProcurar.UseVisualStyleBackColor = false;
+            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // tbProcurar
             // 
@@ -175,6 +179,12 @@
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "ex: 999999999";
+            // 
+            // saveDados
+            // 
+            this.saveDados.CheckFileExists = true;
+            this.saveDados.RestoreDirectory = true;
+            this.saveDados.ValidateNames = false;
             // 
             // telaMain
             // 
@@ -217,6 +227,7 @@
         private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.TextBox tbProcurar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.SaveFileDialog saveDados;
     }
 }
 

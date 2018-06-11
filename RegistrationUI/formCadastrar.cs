@@ -83,9 +83,6 @@ namespace RegistrationUI
                     avisoJanela("Campo vazio", "Nenhum campo pode ficar vazio!");
                 }
             
-            
-
-            //this.Dispose();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

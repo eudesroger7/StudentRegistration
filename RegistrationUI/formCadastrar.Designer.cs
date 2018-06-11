@@ -165,6 +165,7 @@
             // tbNome
             // 
             this.tbNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNome.Location = new System.Drawing.Point(95, 88);
             this.tbNome.MaxLength = 32;
@@ -175,6 +176,7 @@
             // tbMatricula
             // 
             this.tbMatricula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbMatricula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbMatricula.Location = new System.Drawing.Point(120, 130);
             this.tbMatricula.MaxLength = 9;
@@ -185,6 +187,7 @@
             // tbProfessor
             // 
             this.tbProfessor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbProfessor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbProfessor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbProfessor.Location = new System.Drawing.Point(112, 171);
             this.tbProfessor.MaxLength = 32;
@@ -229,6 +232,7 @@
             // tbNota1
             // 
             this.tbNota1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNota1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbNota1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota1.Location = new System.Drawing.Point(95, 258);
             this.tbNota1.MaxLength = 2;
@@ -239,6 +243,7 @@
             // tbNota2
             // 
             this.tbNota2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNota2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbNota2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota2.Location = new System.Drawing.Point(349, 258);
             this.tbNota2.MaxLength = 2;
@@ -249,6 +254,7 @@
             // tbNota3
             // 
             this.tbNota3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNota3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbNota3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota3.Location = new System.Drawing.Point(97, 303);
             this.tbNota3.MaxLength = 2;
@@ -259,6 +265,7 @@
             // tbNota4
             // 
             this.tbNota4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNota4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbNota4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNota4.Location = new System.Drawing.Point(350, 303);
             this.tbNota4.MaxLength = 2;

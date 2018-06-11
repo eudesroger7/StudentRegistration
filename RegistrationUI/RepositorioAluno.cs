@@ -36,7 +36,7 @@ namespace RegistrationUI
             {
                 if (aluno.getMatricula() == novoAluno.getMatricula()) //testo se o cpf para por parametro é igual ao de algum permitido
                 {
-                    int notaFinal = (aluno.getNota1()+ aluno.getNota2()+ aluno.getNota3()+ aluno.getNota4())/4;
+                    int notaFinal = (novoAluno.getNota1()+ novoAluno.getNota2()+ novoAluno.getNota3()+ novoAluno.getNota4())/4;
 
                     aluno.setNome(novoAluno.getNome());
                     aluno.setSerie(novoAluno.getSerie());
@@ -70,17 +70,17 @@ namespace RegistrationUI
             foreach (Aluno aluno in this.repositorio)
             {
                 str = str + (
-                    "Id: " + (getIndex(aluno) + 1) +
-                    "\r\n Nome: " + aluno.getNome() +
-                    "\r\n Matricula: " + aluno.getMatricula() +
-                    "\r\n Serie: " + aluno.getSerie() +
-                    "\r\n Turma: " + aluno.getTurma() +
-                    "\r\n Professor: " + aluno.getProfessor() +
-                    "\r\n Nota 1: " + aluno.getNota1() +
-                    "\r\n Nota 2: " + aluno.getNota2() +
-                    "\r\n Nota 3: " + aluno.getNota3() +
-                    "\r\n Nota 4: " + aluno.getNota4() +
-                    "\r\n Nota Final: " + aluno.getNotaFinal() +
+                    "Id:  " + (getIndex(aluno) + 1) +
+                    "\r\nNome:  " + aluno.getNome() +
+                    "\r\nMatricula:  " + aluno.getMatricula() +
+                    "\r\nSerie:  " + aluno.getSerie() +
+                    "\r\nTurma:  " + aluno.getTurma() +
+                    "\r\nProfessor: " + aluno.getProfessor() +
+                    "\r\nNota 1:  " + aluno.getNota1() +
+                    "\r\nNota 2:  " + aluno.getNota2() +
+                    "\r\nNota 3:  " + aluno.getNota3() +
+                    "\r\nNota 4:  " + aluno.getNota4() +
+                    "\r\nNota Final:  " + aluno.getNotaFinal() +
                     "\r\n-------------------------------\r\n"
                  );
             }
